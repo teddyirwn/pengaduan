@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+
+    /* Fonts */
+    --primary-font: Quicksand;
+    --secondary-font: "Poppins", sans-serif;
+    --light-font: 300;
+    --normal-font: 400;
+    --medium-font: 500;
+    --semibold-font: 600;
+    --bold-font: 700;
+    --extrabold-font: 800;
+    --black-font: 900;
+
+    --bg-light-2: #f2f7fa;
+    /* Text Color */
+    --text-black: #000;
+    --text-white: #fff;
+    --text-light-2: #798089;
+
+    --text-dark-green: #12c4a0;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    font-weight: var(--normal-font);
+    background-color: var(--bg-white);
+}
+
+
+
+#app nav {
+    padding: 1.3rem;
+    transition: .3s ease-in-out;
+
+}
+
+#app nav.active {
+    padding: 1.5rem 1.3rem;
+    background-color: #ffff;
+}
+
+nav .navbar-brand {
+    font-weight: var(--bold-font);
+
+}
+
+nav .menu-navbar-nav {
+    font-weight: var(--extrabold-font);
+}
+
+nav .navbar-btn {
+    font-weight: var(--semibold-font);
+}
+
+#home {
+    background: url('../images/bg.png');
+    background-size: cover;
+}
+
+.header-img-section {
+    animation: img 2s linear infinite alternate;
+}
+
+@keyframes img {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.container .banner-title {
+    font-weight: var(--bold-font);
+    font-size: 3.5 rem;
+    font-family: var(--secondary-font);
+}
+
+.container .banner-title span {
+    color: var(--text-dark-green);
+}
+
+.container .banner-description {
+    font-weight: var(--semibold-font);
+    color: var(--text-light-2);
+    font-size: 1.2rem;
+}
+
+.container .banner-btn {
+    font-weight: var(--bold-font);
+    padding: .3rem 2rem;
+}
+
+#about {
+    padding-top: 3rem;
+}
+
+#about h1 {
+    font-weight: var(--bold-font);
+    font-family: var(--secondary-font);
+}
+
+.container .about-title {
+    font-family: var(--secondary-font);
+}
+
+.container .about-description {
+    color: var(--text-light-2);
+
+}
+
+#proses-lapor {
+    padding-top: 7rem;
+}
+
+#proses-lapor .container .proses-text {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#proses-lapor .container h2 {
+    font-weight: var(--extrabold-font);
+    font-size: 1rem;
+    color: var(--text-light-2);
+}
+
+#proses-lapor .container h1 {
+    font-weight: var(--bold-font);
+}
+
+#jumlah {
+    background-color: var(--bg-light-2);
+    padding: 2rem 0;
+    margin: 3rem 0;
+}
+
+
+.card-pengaduan {
+    background-color: var(--text-dark-green);
+    border-radius: 1rem;
+}
+
+.card-pengaduan h1 {
+    color: var(--text-white);
+    font-weight: var(--semibold-font);
+}
+
+.card-pengaduan p {
+    font-weight: var(--semibold-font);
+}
